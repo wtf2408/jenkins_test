@@ -1,0 +1,8 @@
+.footer{
+    color: aliceblue;
+    width: 100%;
+    background-color: var(--dark-gray);
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}

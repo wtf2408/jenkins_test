@@ -1,0 +1,268 @@
+/*MAIN*/
+.main{
+    flex: 1 1 auto;
+}
+
+.welcom{
+    padding: 0;
+    margin: 0;
+    background: url('../imgs/welcom_bg.jpg') center/cover no-repeat;
+}
+.welcom_container{
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.welcom_content{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0;
+    position: relative;
+}
+.welcom_title{
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.welcom_description{
+    font-size: 1.5rem;
+    margin: 3rem 0 0 0;
+
+}
+.welcom_button{
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #262626;
+    color: white;
+    height: 4rem;
+    width: 25rem;
+    margin: 3rem 0 0 0;
+}
+
+
+
+/*DIRECTIONS*/
+.directions{
+    background-color: whitesmoke;
+}
+.directions_content-width{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+}
+.directions_title, .teachers_title{
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+.directions_container { /*флекс контейнер для направлений*/
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+.direction {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    color: var(--dark-gray);
+    border-radius: 10px;
+    border: 1px solid rgb(163, 163, 163) ;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+.direction_image {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 2rem;
+    object-fit: cover;
+}
+.text-about {
+    height: 50%;
+    padding: 2rem;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+.direction_name {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.direction_description {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.direction_sign-up {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: auto;
+    width: 250px;
+}
+/*ПРЕПОДАВАТЕЛИ*/
+.teachers {
+    background-color: whitesmoke;
+    border-top: 1px solid #6f6f6f;
+}
+.teachers_container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.teachers_title {
+    padding: 0;
+    margin-bottom: 3rem;
+}
+.teacher {
+    display: flex;
+    flex-direction: row;
+}
+.teacher_photo {
+    border-radius: 20px;
+    width: 50%;
+    object-fit: cover;
+}
+.about_teacher {
+    padding: 0 2rem;
+}
+.tacher_name {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.teacher_description {
+    font-size: 1.2rem;
+}
+
+/*МОДАЛЬНОЕ ОКНО*/
+.modal {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+.modal_window {
+    margin: 1.5rem;
+    padding: 3rem;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    transform: scale(0);
+    transition: all .8s;
+    color: var(--dark-gray);
+}
+.modal.open .modal_window {
+    transform: scale(1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.form_description {
+    color: #7b7b7b;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.form_group {
+    margin-bottom: 3rem;
+    position: relative;
+    
+}
+.form_group label {
+    color: #7b7b7b;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+.input_box {
+    color: var(--dark-gray);
+    width: 100%;
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #7b7b7b;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.2rem;
+}
+.input_box:focus {
+    border-bottom: 3px solid cornflowerblue;
+}
+.input_box:focus ~ label, .input_box:not(:placeholder-shown) ~ label {
+    color: #cecdcd;
+    top: -1.5rem;
+    font-size: 1rem;
+}
+.politic_agree
+{
+    font-size: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.politic_agree input {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    appearance: none;
+    background-color: #b5b5b5;
+    width: 20px; height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.politic_agree input::before{
+    color: white;
+    font-size: 1rem;
+    display: none;
+}
+.politic_agree input:checked {
+    background-color: #309f47;
+}
+.politic_agree input:checked::before{
+    display: block;
+}
+.modal_window button {
+    background-color: cornflowerblue;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Inter';
+    margin-top: 1.5rem;
+}

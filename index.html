@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--styles-->
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <!--styles-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yoga Nadya</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header_container">
+
+            <p class="header_logo">Yoga Nadya</p>
+
+            <nav class="header_menu">
+                <a href="#directions" class="header_menu_link">НАПРАВЛЕНИЯ<a>
+                <a href="#teachers" class="header_menu_link">ПРЕПОДАВАТЕЛИ</a>
+                <a href="#" class="header_menu_link sign-up_btn">ЗАПИСАТЬСЯ</a>
+                <div class="messengers">
+                    <a href="#" class="fa-brands fa-telegram telegram"></a>
+                    <a href="#" class="fa-brands fa-whatsapp whatsapp"></a>
+                </div>
+            </nav>
+
+            <div class="header_burger">
+                <div class="header_burger-line"></div>
+                <div class="header_burger-line"></div>
+                <div class="header_burger-line"></div>
+            </div>
+
+        </div>
+    </header>
+    <div class="page-wraper">
+        <main class="main">
+            <div class="welcom">
+                <div class="welcom_container">
+                    <div class="welcom_content">
+                        <h1 class="welcom_title">
+                            Студия йоги <br> Yoga Nadya
+                        </h1>
+                        <p class="welcom_description">
+                            Lorem ipsum dolor sit sfjas.<br>Lorem ipsum dolor sit.
+                        </p>
+                        <button class="welcom_button sign-up_btn">
+                            Записаться прямо сейчас
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="directions" id="directions"> <!--для задания цвета заднего фона на весь экран этому разделу-->
+                <div class="directions_content-width"> <!--для задания размеров этго размера-->
+
+                    <h2 class="directions_title">НАПРАВЛЕНИЯ</h2>
+
+                    <div class="directions_container"> <!--флекс контейнер для направлений-->
+                        <div class="direction">
+                            <img class="direction_image" src="./imgs/yoga.jpg"></img>
+                            <div class="text-about">
+                                <h3 class="direction_name">Йога</h3>
+                                <p class="direction_description">Йога айенгара - Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, inventore. Eveniet, earum aliquam.
+                                </p>
+                                <button class="direction_sign-up sign-up_btn">записаться</button>
+                            </div>   
+                        </div>
+                        <div class="direction">
+                            <img class="direction_image" src="./imgs/tantra.jpg"></img>
+                            <div class="text-about">
+                                <h3 class="direction_name">Тантра</h3>
+                                <p class="direction_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolor, odio quis debitis, ab nam maxime alias distinctio commodi, consequuntur laudantium voluptatum similique suscipit eius?</p>
+                                <button class="direction_sign-up sign-up_btn">записаться</button>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="teachers" id="teachers">
+                <div class="teachers_container">
+                    <h2 class="teachers_title">ПРЕПОДАВАТЕЛИ</h2>
+                    <div class="teacher">
+                        <img src="/imgs/quiz_bg.jpeg" alt="" class="teacher_photo">
+                        <div class="about_teacher">
+                            <h2 class="tacher_name">Надежда Гуменникова</h2>
+                            <p class="teacher_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error obcaecati vel maxime amet quisquam magnam sit veritatis deleniti earum. Odio accusamus esse doloremque natus perferendis!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal">
+                <div class="modal_window">
+                    <form method="get" class="form"> 
+                        <h2 class="form_title">Запись на занятие</h2>
+                        <p class="form_description">Заполните форму ниже и мы перезвоним вам в ближайшее время для уточнения всех деталей!</p>
+                        <div class="form_group">
+                            <input type="number" name="phone" class="input_box" placeholder=" ">
+                            <label for="#phone_number">Ваш номер</label>
+                        </div>
+                        <div class="form_group">
+                            <input type="text" name="name" class="input_box" placeholder=" ">
+                            <label for="#name">Ваше имя</label>
+                        </div>
+                        <label class="politic_agree">
+                            
+                            Я согласен с политикой конфиденциальности и обработки данных
+                            <input type="checkbox" class="fa-solid fa-check" id="checkbox"/>
+                        </label>
+                        <button type="submit">отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>футер</p>
+        </footer>
+    </div>
+    <script src="../scripts/script.js">
+    </script>
+    <script src="https://kit.fontawesome.com/6324adcb34.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
