@@ -9,6 +9,7 @@ modal.addEventListener('click', (event) => {
     modal.classList.remove('open');
 })
 const a = 10
+console.log('some text');
 modal.querySelector('.modal_window').addEventListener('click', event => {
     event._isClickWithInModal = true;
 })
