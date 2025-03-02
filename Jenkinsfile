@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                pwd
+                pwd()
                 checkout scm
             }
         }
